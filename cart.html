@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles\webproject\css\bootstrap.css">
+    <link rel="stylesheet" href="styles\webproject\css\bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles\cart.css">
+    <title>Mini E-commerce | Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🛒 Grace Stores</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <span></span>
+                    <span></span> -->
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 bg-light mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a class="nav-link" href="cart.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cart
+                        </a>
+
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Conact Us</a>
+                    </li> -->
+                </ul>
+                <!-- <ul class="navbar-nav ml-auto">
+                    <button class="btn" data-bs-dismiss="modal" aria-label="Close">Log In / Sign Up</button>
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="cart-header">Your Cart</h1>
+    <table class="cart-table">
+        <thead>
+            <th>S/N</th>
+            <th>Item</th>
+            <th class="qty-col">Qty</th>
+            <th>Unit Price</th>
+            <th>Cost</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <th>Total</th>
+            <td class="qty-col"></td>
+            <td></td>
+            <th class="amount-to-be-paid"></th>
+        </tfoot>
+    </table>
+    <div class="buttons-div">
+        <button class="returnshop">Return to shopping</button>
+        <button class="clear-cart">Clear Cart</button>
+        <button class="checkout">Checkout</button>
+    </div>
+    
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="styles\webproject\js\bootstrap.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/cart.js"></script>
+    </footer>
+</body>
+
+</html>

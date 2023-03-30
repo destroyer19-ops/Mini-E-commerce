@@ -1,5 +1,7 @@
-html, body{
+html,
+body {
     font-family: 'Poppins';
+    text-align: center;
     font-size: 15px;
     line-height: 1.5;
     overflow: hidden;
@@ -9,71 +11,92 @@ html, body{
     padding: 0;
     box-sizing: border-box;
 }
+
+.carousel {
+    z-index: -99;
+}
+
+/* keeps this behind all content */
 a {
     text-decoration: none;
     color: rgba(34, 54, 69, .7);
     font-weight: 700;
 }
+
 a:hover {
-    color:#e74c3c;
+    color: #e74c3c;
 }
+
 ul {
     list-style-type: none;
 }
-.navbar{
+
+.navbar {
     background: white;
     padding: 3rem 2rem;
     height: 0rem;
-    min-height: 12vh;
+    min-height: 15svh;
 }
+
 .navbar .navbar-brand a {
     padding: 1rem 0;
     display: block;
+    position: fixed;
     text-decoration: none;
 }
+
 .navbar-brand {
     font-family: 'Poppins';
     font-size: 2.5rem;
     color: #e74c3c;
 }
+
 .navbar-toggler {
     background: #e74c3c;
     border: none;
     padding: 10px 6px;
     outline: none;
 }
-.navbar-toggler span {
+
+/* .navbar-toggler span {
     display: block;
     width: 22px;
     height: 2px;
     border: 1px;
     background: #fff;
 }
-.navbar-toggler span + span {
+
+.navbar-toggler span+span {
     margin-top: 4px;
     width: 18px;
     margin-left: 4px;
 }
-.navbar-toggler span + span + span {
+
+.navbar-toggler span+span+span {
     width: 10px;
-    margin-left:10px;
-}
+    margin-left: 10px;
+} */
+
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding:2rem 1.2rem;
+    padding: 2rem 1.2rem;
     font-size: 1.4rem;
     position: relative;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link:hover {
     border-top: solid #e74c3c;
 }
+
 .navbar-expand-lg .navbar-nav .nav-link:active {
     border-top: 4px solid #e74c3c;
     color: #e74c3c;
 }
-.navbar-nav .button{
+
+.navbar-nav .button {
     padding: 1.2rem 0;
 }
-.navbar-nav .btn{
+
+.navbar-nav .btn {
     background-color: #e74c3c;
     color: white;
     border-radius: 0;
@@ -82,15 +105,17 @@ ul {
     margin-top: -10px;
 }
 
-  /* slideer */
-  .carousel-item{
-        height: 100vh;
-        min-height: 300px;
-        background: no-repeat scroll center scroll;
-        -webkit-background-size: cover;
-        background-size: cover;
-  }
-  .carousel-item::before{
+/* slideer */
+.carousel-item {
+    /* margin-top: 20vh; */
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
     content: "";
     background: #000;
     opacity: 0.6;
@@ -100,32 +125,52 @@ ul {
     right: 0;
     position: absolute;
     display: block;
-  }
-  .carousel-caption{
+}
+.carousel-inner{
+    background-size: cover;
+}
+
+.carousel-caption {
     bottom: 180px;
     padding-left: 100px;
     padding-right: 100px;
-  }
-  .carousel-caption h5{
+}
+
+.carousel-caption h5 {
     font-size: 100px;
     font-weight: 700;
-  }
-  .carousel-caption p{
+}
+
+.carousel-caption p {
     font-size: 18px;
     top: 2rem;
-  }
-  .slider-btn{
+}
+
+.slider-btn {
     margin-top: 30px;
-  }
-  .slider-btn .btn{
+}
+
+.slider-btn .btn {
     background-color: #e74c3c;
     columns: white;
     border-radius: 0;
     padding: 1.5rem 2rem;
     font-size: 1rem;
     margin-right: 15px;
-  }
-  .slider-btn .btn-2{
+}
+
+.slider-btn .btn-2 {
     color: #111010;
     background-color: white;
-  }
+}
+
+
+/* @media (max-width: 570px) {
+
+  } */
+
+@media (max-width: 700px) {
+    .navbar-brand {
+        width: 10%;
+    }
+}
